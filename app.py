@@ -3,7 +3,7 @@ import tensorflow as tf
 from PIL import Image
 import numpy as np
 
-# Load your saved model
+# Load  saved model
 model = tf.keras.models.load_model('keratoconus_model.h5')
 
 st.title("Keratoconus Detection AI")
