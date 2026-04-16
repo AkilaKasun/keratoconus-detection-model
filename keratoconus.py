@@ -72,14 +72,14 @@ def predict_eye_issue(img_path):
 
     prediction = model.predict(img_array)
     classes = list(train_gen.class_indices.keys()) # ['Keratoconus', 'Normal', 'Suspect']
-
+    
     result = classes[np.argmax(prediction)]
     confidence = np.max(prediction) * 100
-
+    
     print(f"Prediction: {result} ({confidence:.2f}% confidence)")
     plt.imshow(img)
     plt.axis('off')
     plt.show()
 
 # Replace this with the filename of your uploaded eye report
-predict_eye_issue('/content/WhatsApp Image 2026-04-16 at 21.50.43.jpeg')
+# predict_eye_issue('img path.jpeg')
