@@ -1,0 +1,27 @@
+# Python (Virtual Environment)
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# AI Models (If they are very large, though .h5 is usually fine)
+# keratoconus_model.h5
+
+# Node.js (React/Vite)
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Environment Variables (Keep your keys private!)
+.env
+.env.local
