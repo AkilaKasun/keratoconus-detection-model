@@ -6,9 +6,9 @@ import numpy as np
 import io
 
 app = Flask(__name__)
-CORS(app) # This prevents "CORS Errors" in your browser
+CORS(app) # This prevents "CORS Errors" 
 
-# Load your model once when the server starts
+
 model = tf.keras.models.load_model('keratoconus_model.h5')
 
 @app.route('/predict', methods=['POST'])
